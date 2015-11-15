@@ -20,6 +20,7 @@ public:
 	bool HasTelevision();
 
 	virtual GymEquipment* Clone();
+	virtual string Jsonify();
 
 private:
 	Treadmill(const Treadmill& original);

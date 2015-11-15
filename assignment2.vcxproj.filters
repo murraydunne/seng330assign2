@@ -4,32 +4,92 @@
     <ClInclude Include="gymequipment.h" />
     <ClInclude Include="treadmill.h" />
     <ClInclude Include="dumbbell.h" />
-    <ClInclude Include="esj\json_adapter.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\allocators.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\json_lexer.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\document.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\json_reader.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\encodedstream.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\json_writer.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\encodings.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\platform_selector.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\filereadstream.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\pt.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\filewritestream.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\stringer.h">
-      <Filter>esj</Filter>
+    <ClInclude Include="rapidjson\memorybuffer.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\windows\convert.h">
-      <Filter>esj\windows</Filter>
+    <ClInclude Include="rapidjson\memorystream.h">
+      <Filter>rapidjson</Filter>
     </ClInclude>
-    <ClInclude Include="esj\windows\json_ex.h">
-      <Filter>esj\windows</Filter>
+    <ClInclude Include="rapidjson\pointer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\prettywriter.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\rapidjson.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\reader.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\stringbuffer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\writer.h">
+      <Filter>rapidjson</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\error\en.h">
+      <Filter>rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\error\error.h">
+      <Filter>rapidjson\error</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\biginteger.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\diyfp.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\dtoa.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\ieee754.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\itoa.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\meta.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\pow10.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\stack.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\strfunc.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\strtod.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\internal\swap.h">
+      <Filter>rapidjson\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\msinttypes\inttypes.h">
+      <Filter>rapidjson\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="rapidjson\msinttypes\stdint.h">
+      <Filter>rapidjson\msinttypes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -39,11 +99,17 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="esj">
-      <UniqueIdentifier>{3b277d7d-324d-4b40-a469-5c2c38613932}</UniqueIdentifier>
+    <Filter Include="rapidjson">
+      <UniqueIdentifier>{0f6f80c4-9b5c-4de8-8bbb-8097470e5808}</UniqueIdentifier>
     </Filter>
-    <Filter Include="esj\windows">
-      <UniqueIdentifier>{153b67fc-6031-4a7b-a9b4-6a71ec76e8a5}</UniqueIdentifier>
+    <Filter Include="rapidjson\error">
+      <UniqueIdentifier>{2ef4c972-25b3-4bf6-bdb9-f452889a978a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\internal">
+      <UniqueIdentifier>{8e46ddcf-636f-4495-a1c4-7929717b94e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rapidjson\msinttypes">
+      <UniqueIdentifier>{ec5c80ef-ad55-48b1-94c4-cbb0722e0b41}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

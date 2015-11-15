@@ -17,6 +17,7 @@ public:
 	float GetWeight();
 
 	virtual GymEquipment* Clone();
+	virtual string Jsonify();
 
 private:
 	Dumbbell(const Dumbbell& original);
