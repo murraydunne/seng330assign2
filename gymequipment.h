@@ -5,6 +5,7 @@
 
 using namespace std;
 
+/// Represents any type of equipment for the gym.
 class GymEquipment
 {
 protected:
@@ -12,6 +13,8 @@ protected:
 	int floorSpace;
 
 public:
+	/// While GymEquipment is an abstract class, this constructor
+	/// exists to be called from the constructors of child classes.
 	GymEquipment(string name, int floorSpace);
 	virtual ~GymEquipment();
 
