@@ -4,11 +4,46 @@
     <ClInclude Include="gymequipment.h" />
     <ClInclude Include="treadmill.h" />
     <ClInclude Include="dumbbell.h" />
+    <ClInclude Include="esj\json_adapter.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\json_lexer.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\json_reader.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\json_writer.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\platform_selector.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\pt.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\stringer.h">
+      <Filter>esj</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\windows\convert.h">
+      <Filter>esj\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="esj\windows\json_ex.h">
+      <Filter>esj\windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="gymequipment.cpp" />
     <ClCompile Include="dumbbell.cpp" />
     <ClCompile Include="treadmill.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="esj">
+      <UniqueIdentifier>{3b277d7d-324d-4b40-a469-5c2c38613932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="esj\windows">
+      <UniqueIdentifier>{153b67fc-6031-4a7b-a9b4-6a71ec76e8a5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>

@@ -119,6 +119,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="dumbbell.h" />
+    <ClInclude Include="esj\json_adapter.h" />
+    <ClInclude Include="esj\json_lexer.h" />
+    <ClInclude Include="esj\json_reader.h" />
+    <ClInclude Include="esj\json_writer.h" />
+    <ClInclude Include="esj\platform_selector.h" />
+    <ClInclude Include="esj\pt.h" />
+    <ClInclude Include="esj\stringer.h" />
+    <ClInclude Include="esj\windows\convert.h" />
+    <ClInclude Include="esj\windows\json_ex.h" />
     <ClInclude Include="gymequipment.h" />
     <ClInclude Include="treadmill.h" />
   </ItemGroup>
