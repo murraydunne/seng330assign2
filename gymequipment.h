@@ -19,5 +19,8 @@ public:
 	void SetFloorSpace(int newFloorSpace);
 	int GetFloorSpace();
 
-	//virtual GymEquipment* Clone() = 0;
+	virtual GymEquipment* Clone() = 0;
+
+private:
+	GymEquipment(const GymEquipment& original);
 };

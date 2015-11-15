@@ -7,6 +7,10 @@ GymEquipment::GymEquipment(string name, int floorSpace)
 }
 
 GymEquipment::~GymEquipment() { }
+GymEquipment::GymEquipment(const GymEquipment& original)
+{
+	// private copy constructor, must use prototype to clone
+}
 
 void GymEquipment::SetName(string newName)
 {
