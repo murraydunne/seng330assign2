@@ -29,7 +29,7 @@ GymEquipment* Dumbbell::Clone()
 	return new Dumbbell(GetName(), GetFloorSpace(), GetWeight());
 }
 
-string Dumbbell::Jsonify()
+string Dumbbell::Serialize()
 {
 	rapidjson::Document val;
 	rapidjson::Value str;
@@ -45,4 +45,22 @@ string Dumbbell::Jsonify()
 	val.Accept(writer);
 
 	return buf.GetString();
+}
+
+bool Dumbbell::Deserialize(string line)
+{
+	rapidjson::StringStream in(line.c_str());
+	rapidjson::Document val;
+	val.ParseStream(in);
+
+	if (!val.HasMember("weight"))
+	{
+		return false;
+	}
+
+	SetName(val["name"].GetString());
+	SetFloorSpace(val["floorSpace"].GetInt());
+	SetWeight((float)val["weight"].GetDouble());
+
+	return true;
 }

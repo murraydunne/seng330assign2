@@ -40,7 +40,7 @@ GymEquipment* Treadmill::Clone()
 	return new Treadmill(GetName(), GetFloorSpace(), GetTopSpeed(), HasTelevision());
 }
 
-string Treadmill::Jsonify()
+string Treadmill::Serialize()
 {
 	rapidjson::Document val;
 	rapidjson::Value str;
@@ -57,4 +57,23 @@ string Treadmill::Jsonify()
 	val.Accept(writer);
 
 	return buf.GetString();
+}
+
+bool Treadmill::Deserialize(string line)
+{
+	rapidjson::StringStream in(line.c_str());
+	rapidjson::Document val;
+	val.ParseStream(in);
+
+	if (!val.HasMember("topSpeed"))
+	{
+		return false;
+	}
+
+	SetName(val["name"].GetString());
+	SetFloorSpace(val["floorSpace"].GetInt());
+	SetTopSpeed((float)val["topSpeed"].GetDouble());
+	SetHasTelevision(val["hasTelevision"].GetBool());
+
+	return true;
 }

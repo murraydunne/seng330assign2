@@ -22,7 +22,9 @@ public:
 	int GetFloorSpace();
 
 	virtual GymEquipment* Clone() = 0;
-	virtual string Jsonify() = 0;
+
+	virtual string Serialize() = 0;
+	virtual bool Deserialize(string line) = 0;
 
 private:
 	GymEquipment(const GymEquipment& original);
