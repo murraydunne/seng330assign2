@@ -1,0 +1,14 @@
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.userprefs
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
