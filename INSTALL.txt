@@ -1,0 +1,39 @@
+=============================
+=== GYM SOFTWARE SCAFFOLD ===
+=============================
+
+REQUIRED TOOLS
+=============================
+ - Visual Studio 2015
+ - Doxygen
+
+BUILDING
+=============================
+
+This project is build using Visual Studio 2015. To build, open assignment2.sln
+in visual studio, right click on the "assignment2" project, and select Build.
+
+To build in testing mode, right click on the "assignment2" project and select
+Properties. Then under Configuration Properties -> General ->
+Configuration Type select Dynamic Library (.dll). Then run Build ->
+Build Solution from the menu bar.
+
+RUNNING
+=============================
+
+From visual studio (if you build NOT in testing mode), just select Debug ->
+Start Debugging from the menu bar. Alternately, run assignment2.exe directly
+from the Debug directory.
+
+TESTING
+=============================
+
+After building in testing mode, select Test -> Run -> All Tests from the
+visual studio menu bar.
+
+DOCUMENTATION
+=============================
+
+To generate the documentation (if you have Doxygen installed) run
+doxygen config.doxygen in the project directory. The documentation can then
+be accessed by opening index.html in the newly created html directory.
