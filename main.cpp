@@ -8,8 +8,13 @@
 #include "treadmill.h"
 #include "dumbbell.h"
 
-
 using namespace std;
+
+/// \mainpage Gym Program
+/// \section intro_sec Introduction
+/// This program simulates the equipment management of a simple gym. The
+/// gym has only treadmills and dumbbells.
+///
 
 int main(int argc, char* argv[])
 {
