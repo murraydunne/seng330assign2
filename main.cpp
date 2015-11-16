@@ -68,7 +68,7 @@ int main(int argc, char* argv[])
 	{
 		cout << "There are currently " << equipment.size() << " pieces of equipment in the gym:" << endl;
 		
-		for (int i = 0; i < equipment.size(); i++) 
+		for (size_t i = 0; i < equipment.size(); i++) 
 		{
 			cout << equipment[i]->GetName() << endl;
 		}
@@ -116,7 +116,7 @@ int main(int argc, char* argv[])
 	ofstream out("gym.json", ios::out | ios::trunc);
 	if (out.is_open())
 	{
-		for (int i = 0; i < equipment.size(); i++)
+		for (size_t i = 0; i < equipment.size(); i++)
 		{
 			out << equipment[i]->Serialize() << endl;
 		}
@@ -127,7 +127,7 @@ int main(int argc, char* argv[])
 		cout << "Error writing output.";
 	}
 
-	for (int i = 0; i < equipment.size(); i++)
+	for (size_t i = 0; i < equipment.size(); i++)
 	{
 		delete equipment[i];
 	}

@@ -6,7 +6,7 @@
 using namespace std;
 
 /// Represents any type of equipment for the gym.
-class GymEquipment
+class __declspec(dllexport) GymEquipment
 {
 protected:
 	string name;

@@ -6,7 +6,7 @@
 using namespace std;
 
 /// Represents a dumbbell at the gym.
-class Dumbbell : public GymEquipment
+class __declspec(dllexport) Dumbbell : public GymEquipment
 {
 	float weight;
 

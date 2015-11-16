@@ -6,7 +6,7 @@
 using namespace std;
 
 /// Represents a treadmill at the gym.
-class Treadmill : public GymEquipment
+class __declspec(dllexport) Treadmill : public GymEquipment
 {
 	float topSpeed;
 	bool hasTelevision;

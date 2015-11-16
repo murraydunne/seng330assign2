@@ -15,5 +15,16 @@ bld/
 [Oo]bj/
 .vs/
 *.exe
+*.dll
 html/
 latex/
+ipch/
+assignment2unittests/[Dd]ebug/
+assignment2unittests/[Rr]elease/
+assignment2unittests/x64/
+assignment2unittests/x86/
+assignment2unittests/build/
+assignment2unittests/bld/
+assignment2unittests/[Bb]in/
+assignment2unittests/[Oo]bj/
+assignment2unittests/.vs/
