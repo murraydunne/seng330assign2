@@ -52,6 +52,9 @@ namespace assignment2unittests
 			Assert::AreEqual(db->GetName().c_str(), db2->GetName().c_str(), L"Dumbbell names do not match!");
 			Assert::AreEqual(db->GetFloorSpace(), db2->GetFloorSpace(), L"Dumbbell floor spaces do not match!");
 			Assert::AreEqual(db->GetWeight(), db2->GetWeight(), L"Dumbbell weights do not match!");
+
+			delete db;
+			delete db2;
 		}
 
 		TEST_METHOD(TestTreadmillSerialization)
@@ -66,6 +69,9 @@ namespace assignment2unittests
 			Assert::AreEqual(tr->GetFloorSpace(), tr2->GetFloorSpace(), L"Treadmill floorSpaces do not match!");
 			Assert::AreEqual(tr->GetTopSpeed(), tr2->GetTopSpeed(), L"Treadmill top speeds do not match!");
 			Assert::AreEqual(tr->HasTelevision(), tr2->HasTelevision(), L"Treadmill television statuses do not match!");
+
+			delete tr;
+			delete tr2;
 		}
 	};
 }
